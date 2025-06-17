@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Portifólio</title>
+</head>
+
+<body>
+
+    <header class="container text-center">
+
+        <img src="murillo.png" alt="avatar do murillo" class="rounded-circle" width="150" height="150" srcset="">
+        <p class="lead">Eu sou Murillo</p>
+        <h1>Eu estudo programação</h1>
+        <br>
+        <p>Sou estudante do segundo ano do ensino médio, na PEI Maria de Lourdes Stipp Steffen. Além de estudar
+            programação pelo Alura na escola, faço um curso de informática na Microcamp. Trabalho como professor de
+            inglês na Black White School.</p>
+        <p>Minhas Habilidades</p>
+        <div class="skill">
+            <p class="badge bg-success">HTML</p>
+            <p class="badge bg-success">JavaScript</p>
+            <p class="badge bg-success">Excel</p>
+            <p class="badge bg-success">Scratch</p>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+    </header>
+    <main class="container mt-5">
+        <h2 class="text-center">Meus Projetos</h2>
+        <div class="row">
+            <!--projeto 1-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="projeto1.png" class="card-img-top" width="350" height="350" alt="Imagem do projeto Corrida" />
+                    <div class="card-body">
+                        <h5 class="card-title">Corrida</h5>
+                        <p class="card-text">
+                            Este projeto é um jogo de corrida com 5 personagens, você usa as teclas: a,s,d,f,g para
+                            movimentar os personagens. Este projeto foi desenvolvido no P5.js.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            meu projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--projeto 2-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="projeto2.png" class="card-img-top" width="350" height="350" alt="Imagem do projeto Palavras" />
+                    <div class="card-body">
+                        <h5 class="card-title">Palavras</h5>
+                        <p class="card-text">
+                            Este projeto é um jogo, que revele uma frase conforme o mouse está mais à direta. Este
+                            projeto foi desenvolvido no P5.js.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            meu projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--projeto 3-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="alura-flix.png" class="card-img-top" width="350" height="350" alt="Imagem do projeto Aventura" />
+                    <div class="card-body">
+                        <h5 class="card-title">Alura-flix</h5>
+                        <p class="card-text">
+                            Este projeto é um site interativo no qual mostra análises de animes. Este projeto foi desenvolvido no
+                            Visual Studio Code.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            meu projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Modal 1-->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Corrida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                    <img src="projeto1.png" class="img-fluid w-100" alt="Imagem representativa do projeto Corrida">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://murillo84.github.io/Corrida/">Ver o projeto ao vivo</a>
+                    <a href="https://github.com/MuRiLlO84/Corrida">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal 2-->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Palavras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                    <img src="projeto2.png" class="img-fluid w-100" alt="Imagem representativa do projeto Corrida">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://murillo84.github.io/js-palavras/">Ver o projeto ao vivo</a>
+                    <a href="https://github.com/MuRiLlO84/js-palavras">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal 3-->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alura-flix</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                    <img src="alura-flix.png" class="img-fluid w-100" alt="Imagem representativa do projeto Corrida">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://murillo84.github.io/AluraFlix/">Ver o projeto ao vivo</a>
+                    <a href="https://github.com/MuRiLlO84/AluraFlix">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/MuRiLlO84">GitHub</a>
+        </div>
+        <p class="my-5 text text-center">
+            © Copyright 2024. Produzido por Murillo Tavares Bentlin
+        </p>
+    </footer>
+</body>
+
+</html>
